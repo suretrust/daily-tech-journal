@@ -1,4 +1,4 @@
-## Welcome to my daily tech journal
+## Welcome to my daily tech journal (written using less technical terms)
 
 #### (14-01-2020): Differences between an Array and a LinkedList
 
