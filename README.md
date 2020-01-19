@@ -47,7 +47,10 @@ lambda3.call
 
 lambda3.call(5)
 >> 20
+
+lambda3.class
+>> Proc
 ```
-From the example above, lambda raises an argument error when passed the wrong number of parameter(s).
+From the example above, lambda raises an argument error when passed the wrong number of parameter(s). Also a lambda's class is `Proc`.
 
 #### (18-01-2020) Procs
