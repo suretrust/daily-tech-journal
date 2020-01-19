@@ -27,3 +27,25 @@ end
 The code after the each between the `{}` or `do` and `end` -- `|num| puts num` is a block.
 
 ##### Lambda
+Lambda is a way to define a block with a special syntax. You can declare a lambda with `->` or `lambda` followed by a block. An example is shown below:
+
+```ruby
+lamda1 = -> { puts "I am a lambda" }
+lamda2 = lambda { puts `I am also a lambda` }
+lambda3 = lambda (x) { x * 4 }
+```
+When we define a block above with the `each` enumerable, the code gets run instantly but this is not the case for `lambda`, the code does not get run just by declaring it. We need to call the method for it to run. To call a `lambda`, refer to the example below:
+```ruby
+lambda1.call
+>> I am a lambda
+
+lambda2.call
+>> I am also a lambda
+
+lambda3.call
+>> ArgumentError (wrong number of arguments (given 0, expected 1))
+
+lambda3.call(5)
+>> 20
+```
+From the example above, lambda raises an argument error when passed the wrong number of parameter(s).
