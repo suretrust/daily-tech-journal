@@ -11,3 +11,15 @@
 #### (15-01-2020): What does DOCTYPE mean in HTML?
 
 Doctype is short for Document type. It is used to declare the version of HTML used by the document.
+
+#### (16-01-2020): Blocks, Procs and Lambda in ruby, what's the deal?
+##### Block
+
+Blocks are quite polpular in ruby, if you are a ruby praogrammer, there is a chance that you used it already. A block is a code that is encapsulated between `do` and `end` or in between `{}`. If you have used `each` enumerable method, then you have used a block.
+
+```ruby
+array.each { |num| puts num }
+```
+The code after the each `{|num| puts num}` is a block.
+
+##### Lambda
