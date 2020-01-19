@@ -13,7 +13,7 @@
 Doctype is short for Document type. It is used to declare the version of HTML used by the document.
 
 ### (16-01-2020): Blocks, Procs and Lambda in ruby, what's the deal?
-#### Block
+#### (16-01-2020) Block
 
 Blocks are quite polpular in ruby, if you are a ruby praogrammer, there is a chance that you used it already. A block is a code that is encapsulated between `do` and `end` or in between `{}`. If you have used `each` enumerable method, then you have used a block.
 
@@ -26,7 +26,7 @@ end
 ```
 The code after the each between the `{}` or `do` and `end` -- `|num| puts num` is a block.
 
-#### Lambda
+#### (17-01-2020) Lambda
 Lambda is a way to define a block with a special syntax. You can declare a lambda with `->` or `lambda` followed by a block. An example is shown below:
 
 ```ruby
@@ -49,3 +49,5 @@ lambda3.call(5)
 >> 20
 ```
 From the example above, lambda raises an argument error when passed the wrong number of parameter(s).
+
+#### (18-01-2020) Procs
