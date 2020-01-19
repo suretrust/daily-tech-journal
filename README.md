@@ -19,7 +19,11 @@ Blocks are quite polpular in ruby, if you are a ruby praogrammer, there is a cha
 
 ```ruby
 array.each { |num| puts num }
+
+array.each do |num|
+  puts num
+end
 ```
-The code after the each `{|num| puts num}` is a block.
+The code after the each between the `{}` or `do` and `end` -- `|num| puts num` is a block.
 
 ##### Lambda
