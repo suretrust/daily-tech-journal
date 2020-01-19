@@ -54,3 +54,22 @@ lambda3.class
 From the example above, lambda raises an argument error when passed the wrong number of parameter(s). Also a lambda's class is `Proc`.
 
 #### (18-01-2020) Procs
+Procs is similar to lambda. In fact, lambda is a type of Proc as shown above. Proc is defined diffrently from lambda as shown below:
+```ruby
+proc1 = Proc.new { puts "I am a Proc" }
+proc2 = Proc.new { |x,y| 'X and Y' }
+```
+Proc is different from lamda in some ways:
+- They are defined differently
+`-> { puts 'Lambda' }` for lambda. `Proc.new { puts 'Proc' }` for proc.
+- Proc does not care about arguments but lambda does.
+```ruby
+lambda = lambda (x) { x * 4 }
+lambda.call
+>> ArgumentError (wrong number of arguments (given 0, expected 1))
+
+proc2 = Proc.new { |x,y| 'X and Y' }
+proc2.call
+>> X and Y
+```
+- Proc returns from the current method while lambda returns from itself.
