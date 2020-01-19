@@ -73,3 +73,27 @@ proc2.call
 >> X and Y
 ```
 - Proc returns from the current method while lambda returns from itself.
+```ruby
+def test_lambda_return
+  puts 'Before lambda'
+  lambda = lambda { puts 'I am a lambda' }
+  lambda.call
+  puts 'After lambda'
+end
+
+test_lambda_return
+>> Before lambda
+>> I am a lambda
+>> After lambda
+
+def test_proc_return
+  puts 'Before proc'
+  proc = Proc.new { puts "I am a Proc" }
+  proc.call
+  puts 'After proc'
+end
+
+test_proc_return
+>> Before proc
+>> I am a Proc
+```
