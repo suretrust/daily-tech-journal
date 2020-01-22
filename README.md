@@ -97,3 +97,5 @@ test_proc_return
 >> Before proc
 >> I am a Proc
 ```
+### Memoization
+This is a programming technique that invloves storing the value of expensive method calls for future reference/usage.
