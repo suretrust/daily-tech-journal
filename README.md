@@ -98,31 +98,4 @@ test_proc_return
 >> I am a Proc
 ```
 ### (22-01-2020) Memoization
-This is a programming technique that invloves storing the value of expensive method calls for future reference/usage. I'd use the Climbing Stairs problem as a typical example.
-
-![memoization](https://i.ibb.co/xF7b3qp/memo.png)
-
-This could be solved in 2 lines using recursion:
-```ruby
-def climb_stairs(n)
-    return 1 if n == 0 || n == 1
-
-    climb_stairs(n - 1) + climb_stairs(n - 2)
-end
-```
-
-However, these function calls are expensive, how? Assume `n = 6`, we need to call `climb_stairs(5)` and `climb_stairs(4)` 
-
-Using memoization, we save an already calculated value into an hash and check it each time before calculating again.
-```ruby
-def climb_stairs(n)
-    dp(n, {})
-end
-
-def dp(n, memo)
-    return 1 if n == 1 || n == 0
-    return memo[n] if memo[n]
-    
-    memo[n] = dp(n-1, memo) + dp(n-2, memo)
-end
-```
+This is a programming technique that invloves storing the value of expensive method calls for future reference/usage.
