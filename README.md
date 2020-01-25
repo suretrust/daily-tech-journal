@@ -101,4 +101,4 @@ test_proc_return
 This is a programming technique that invloves storing the value of expensive method calls for future reference/usage.
 
 ### (25-01-2020) Why is Tenary operators called 'tenary'?
-Tenary means threee which means that it has three operands. The if, then, and else. `true ? true : false` => `if ? then : else`.
+Tenary means three which insinuates that it has three operands. The if, then, and else. `true ? true : false` => `if ? then : else`.
